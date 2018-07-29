@@ -1,0 +1,8 @@
+django<2.1
+pylint
+pylint-django
+psycopg2-binary
+ipython
+yapf
+pytest
+pytest-django
