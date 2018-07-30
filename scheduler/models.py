@@ -15,7 +15,7 @@ class Weekday(models.Model):
                 (WEDNESDAY, 'Wednesday'), (THURSDAY, 'Thursday'),
                 (FRIDAY, 'Friday'), (SATURDAY, 'Saturday'), (SUNDAY, 'Sunday'))
 
-    day = models.IntegerField(max_length=10, choices=WEEKDAYS)
+    day = models.IntegerField(choices=WEEKDAYS)
 
     def __str__(self):
         return f'{Weekday.WEEKDAYS[self.day-1][1]}'

@@ -42,7 +42,7 @@ class User(AbstractUser):
     grade = models.SmallIntegerField(choices=GRADE, default=17)
 
     # Parental/Gudiance Information
-    guidance = models.ForeignKey('Guidance', on_delete=models.CASCADE, blank=True, null=True)
+    # guidance = models.ForeignKey('Guidance', on_delete=models.CASCADE, blank=True, null=True)
 
     # Entry Information
     referral = models.ForeignKey('self', blank=True, null=True, on_delete=models.CASCADE)
@@ -85,7 +85,8 @@ class Guidance(models.Model):
 
     name = models.CharField(max_length=100, blank=True, null=True)
     relationship = models.SmallIntegerField(choices=RELATIONSHIP, default=OTHER)
-    contact = models.IntegerField()
+    contact = models.CharField(max_length=20, blank=True, null=True)
+    student = models.ForeignKey(to='User', on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
-        return f'{self.name} ({self.contact})'
+        return f'{self.get_relationship_display()} - {self.name} ({self.contact})'
