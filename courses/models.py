@@ -3,18 +3,11 @@ from django.contrib.auth import get_user_model
 
 import datetime
 
+from scheduler.models import Weekday
+
 
 class Course(models.Model):
     """Course represents a single lesson for a student."""
-
-    MONDAY = 1
-    TUESDAY = 2
-    WEDNESDAY = 3
-    THURSDAY = 4
-    FRIDAY = 5
-    SATURDAY = 6
-    SUNDAY = 7
-    WEEKDAYS = ((MONDAY, 'Monday'), (TUESDAY, 'Tuesday'), (WEDNESDAY, 'Wednesday'), (THURSDAY, 'Thursday'), (FRIDAY, 'Friday'), (SATURDAY, 'Saturday'), (SUNDAY, 'Sunday'))
 
     # Constant for setting the default lesson duration.
     DEFAULT_LESSON_DURATION = datetime.timedelta(hours=1)
@@ -28,10 +21,12 @@ class Course(models.Model):
     # Duration is the length of the lesson
     duration = models.DurationField(default=DEFAULT_LESSON_DURATION, help_text='Format: [HH:MM:SS]')
     time = models.TimeField(help_text='Format: [HH:MM:SS]')
-    weekday_for_lessons = models.SmallIntegerField(choices=WEEKDAYS)
+    # weekday_for_lessons: SmallIntergerField can't fit into the database for multi-selection.
+    weekday_for_lessons = models.ManyToManyField(to=Weekday)
     # lessons_per_week can be deduced from weekdays 
     # lessons_per_week = models.SmallIntegerField()
     price = models.DecimalField(max_digits=8, decimal_places=2)
+    active = models.BooleanField(default=True)
 
     def __str__(self):
         return f'{self.title} ({self.student.english_name} {self.student.last_name})'
