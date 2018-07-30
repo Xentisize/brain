@@ -34,6 +34,8 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'courses.apps.CoursesConfig',
     'scheduler.apps.SchedulerConfig',
+    'attendance.apps.AttendanceConfig',
+    
     
     'django.contrib.admin',
     'django.contrib.auth',
