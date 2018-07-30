@@ -26,6 +26,9 @@ Temporary Items
 # Pytest-Cache
 .pytest_cache/
 
+# Django migrations
+migrations/
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -89,3 +92,6 @@ local_settings.py
 
 .env
 db.sqlite3
+
+# VSCode settings
+.vscode

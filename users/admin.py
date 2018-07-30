@@ -5,9 +5,10 @@ from .models import User, Guidance, School
 
 class UserAdmin(admin.ModelAdmin):
 
-    list_display = ('english_name', 'last_name', 'first_name', 'mobile_tel', 'guidance')
+    list_display = ('username', 'english_name', 'last_name', 'first_name', 'mobile_tel', 'guidance')
     search_fields = ('english_name', )
     autocomplete_fields = ('school', )
+    list_filter = ('is_teacher', )
 
 
 admin.site.register(User, UserAdmin)

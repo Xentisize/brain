@@ -1,9 +1,13 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
+from .managers import UserManager
+
 
 class User(AbstractUser):
-    """This is the user model in our matrix. Each user shall have its personal information and role."""
+    """This is the user model in our matrix. Each user shall have its personal information and role. User can be differentiated by their roles in teachers and students."""
+
+    roles = UserManager()
 
     GENDER = (
         ('F', 'Female'),
@@ -16,6 +20,8 @@ class User(AbstractUser):
 
     # Basic personal information
     as_id = models.CharField("AS ID", max_length=20, unique=True, db_index=True)
+    is_teacher = models.BooleanField(default=False)
+
     # active = models.BooleanField(default=True) # active is built-in
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
