@@ -12,4 +12,4 @@ class CreateCourseForm(forms.ModelForm):
 
     class Meta:
         model = Course
-        fields = ['title', 'subject', 'student', 'teacher', 'duration', 'time', 'price', 'weekday_for_lessons']
+        fields = ['title', 'subject', 'student', 'teacher', 'duration', 'time', 'price', 'weekday_for_lessons', 'active']

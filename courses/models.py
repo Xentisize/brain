@@ -12,7 +12,7 @@ class Course(models.Model):
     # Constant for setting the default lesson duration.
     DEFAULT_LESSON_DURATION = datetime.timedelta(hours=1)
 
-    SUBJECTS = (('Chinese', 'Chinese'), ('English', 'English'), ('Mathematics', 'Mathematics'), ('Liberal Studies', 'Liberal Studies'), ('Physics', 'Physics'), ('Chemistry', 'Chemistry'), ('Biology', 'Biology'), ('Economics', 'Economy'), ('Japanese', 'Japanese'), ('Examinations', 'Examinations'), ('Other', 'Other'))
+    SUBJECTS = (('Chinese', 'Chinese'), ('English', 'English'), ('Mathematics', 'Mathematics'), ('Liberal Studies', 'Liberal Studies'), ('Physics', 'Physics'), ('Chemistry', 'Chemistry'), ('Biology', 'Biology'), ('Economics', 'Economics'), ('Japanese', 'Japanese'), ('Examinations', 'Examinations'), ('Other', 'Other'))
 
     title = models.CharField(max_length=100)
     subject = models.CharField(max_length=50, choices=SUBJECTS)
