@@ -6,8 +6,7 @@ from courses.models import Course
 
 
 class CreateCourseForm(forms.ModelForm):
-
-    student = forms.ModelChoiceField(queryset=get_user_model().roles.get_students())
+    student = forms.ModelMultipleChoiceField(queryset=get_user_model().roles.get_students())
     teacher = forms.ModelChoiceField(queryset=get_user_model().roles.get_teachers())
 
     class Meta:

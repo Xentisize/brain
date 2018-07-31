@@ -8,7 +8,7 @@ class Lesson(models.Model):
     """Lesson represents a single lesson which will include the course and attendance."""
     student = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
-
+    datetime = models.DateTimeField()
 
 
 class Entry(models.Model):
