@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}Taking Attendance - {{ block.super}}{% endblock %}
+
+{% block content %}
+    <form action="{% url 'attendance:find_student' %}" method="get">
+        <input type="text" name="student_id">
+        <input type="submit" value="Find">
+    </form>
+{% endblock %}
