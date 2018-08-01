@@ -1,0 +1,65 @@
+[
+    {
+        "model": "users.School",
+        "pk": 1,
+        "fields": {
+            "english": "Tang King Po School",
+            "chinese": "鄧鏡波學校",
+            "district": "Ho Man Tin"
+        }
+    },
+    {
+        "model": "users.School",
+        "pk": 2,
+        "fields": {
+            "english": "Baptist Lui Ming Choi Secondary School",
+            "chinese": "浸信會呂明才中學",
+            "district": "Sha Tin"
+        }
+    },
+    {
+        "model": "users.School",
+        "pk": 3,
+        "fields": {
+            "english": "Caritas Fanling Chan Chun Ha Secondary School",
+            "chinese": "明愛粉嶺陳震夏中學",
+            "district": "Fan Ling"
+        }
+    },
+    {
+        "model": "users.School",
+        "pk": 4,
+        "fields": {
+            "english": "Assembly of God Hebron Secondary School",
+            "chinese": "神召會康樂中學",
+            "district": "Tai Po"
+        }
+    },
+    {
+        "model": "users.School",
+        "pk": 5,
+        "fields": {
+            "english": "CCC Kei Yuen College",
+            "chinese": "中華基督教會基元中學",
+            "district": "Yuen Long"
+        }
+    },
+    {
+        "model": "users.School",
+        "pk": 6,
+        "fields": {
+            "english": "Delia Memorial School (Hip Wo)",
+            "chinese": "地利亞修女紀念學校(協和)",
+            "district": "Kwun Tong"
+        }
+    },
+    {
+        "model": "users.School",
+        "pk": 7,
+        "fields": {
+            "english": "Diocesan Girl's School",
+            "chinese": "拔萃女書院",
+            "district": "Mong Kok"
+        }
+    }
+]

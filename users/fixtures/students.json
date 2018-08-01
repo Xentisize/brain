@@ -1,0 +1,82 @@
+[
+    {
+        "model": "users.User",
+        "pk": 4,
+        "fields": {
+            "as_id": "AS000300",
+            "entry_date": "2018-01-01",
+            "is_teacher": false,
+            "password": "1234567",
+            "username": "jason_ccs",
+            "first_name": "Chun San",
+            "last_name": "Chan",
+            "english_name": "Jason",
+            "chinese_name": "陳雋昇",
+            "gender": "M",
+            "birthday": "1990-09-20",
+            "home_tel": "27133107",
+            "mobile_tel": "95027008",
+            "address": "Flat G, 12/F, Block 1, Mei Wood Gardern, Kingwood Villa, Tin Shui Wai, N.T"
+        }
+    },
+    {
+        "model": "users.User",
+        "pk": 5,
+        "fields": {
+            "as_id": "AS000301",
+            "entry_date": "2018-01-01",
+            "is_teacher": false,
+            "password": "1234567",
+            "username": "brian_csy",
+            "first_name": "Shu Yan",
+            "last_name": "Chan",
+            "english_name": "Brian",
+            "chinese_name": "陳樹仁",
+            "gender": "M",
+            "birthday": "1990-09-20",
+            "home_tel": "27133107",
+            "mobile_tel": "95027008",
+            "address": "Flat G, 12/F, Block 1, Mei Wood Gardern, Kingwood Villa, Tin Shui Wai, N.T"
+        }
+    },
+    {
+        "model": "users.User",
+        "pk": 6,
+        "fields": {
+            "as_id": "AS000303",
+            "entry_date": "2018-01-01",
+            "is_teacher": false,
+            "password": "1234567",
+            "username": "nicole_tyl",
+            "first_name": "Yun Lung",
+            "last_name": "Tam",
+            "english_name": "Nicole",
+            "chinese_name": "譚雲龍",
+            "gender": "F",
+            "birthday": "1990-09-20",
+            "home_tel": "27133107",
+            "mobile_tel": "95027008",
+            "address": "Flat G, 12/F, Block 1, Mei Wood Gardern, Kingwood Villa, Tin Shui Wai, N.T"
+        }
+    },
+    {
+        "model": "users.User",
+        "pk": 7,
+        "fields": {
+            "as_id": "AS000304",
+            "entry_date": "2018-01-01",
+            "is_teacher": false,
+            "password": "1234567",
+            "username": "jamie_lmf",
+            "first_name": "Mei Fung",
+            "last_name": "Lee",
+            "english_name": "Jamie",
+            "chinese_name": "李美鳳",
+            "gender": "F",
+            "birthday": "1990-09-20",
+            "home_tel": "27133107",
+            "mobile_tel": "95027008",
+            "address": "Flat G, 12/F, Block 1, Mei Wood Gardern, Kingwood Villa, Tin Shui Wai, N.T"
+        }
+    }
+]

@@ -1,0 +1,80 @@
+[
+    {
+        "model": "courses.Course",
+        "pk": 0,
+        "fields": {
+            "title": "P5 English Writing Class",
+            "subject": "English",
+            "students": [4, 5],
+            "teacher": 1,
+            "duration": "01:00:00",
+            "time": "13:00:00",
+            "weekday_for_lessons": [1, 2],
+            "price": 100.00,
+            "active": true
+        }
+    },
+    {
+        "model": "courses.Course",
+        "pk": 1,
+        "fields": {
+            "title": "S1 Mathematics Class",
+            "subject": "Mathematics",
+            "students": [
+                5,
+                6
+            ],
+            "teacher": 2,
+            "duration": "01:00:00",
+            "time": "13:00:00",
+            "weekday_for_lessons": [
+                1,
+                2,
+                3
+            ],
+            "price": 100.00,
+            "active": true
+        }
+    },
+    {
+        "model": "courses.Course",
+        "pk": 2,
+        "fields": {
+            "title": "P5 Chinese Reading Class",
+            "subject": "Chinese",
+            "students": [
+                4
+            ],
+            "teacher": 2,
+            "duration": "01:00:00",
+            "time": "13:00:00",
+            "weekday_for_lessons": [
+                5,
+                6
+            ],
+            "price": 100.00,
+            "active": true
+        }
+    },
+    {
+        "model": "courses.Course",
+        "pk": 3,
+        "fields": {
+            "title": "P6 English Writing Class",
+            "subject": "English",
+            "students": [
+                6,
+                5
+            ],
+            "teacher": 1,
+            "duration": "01:00:00",
+            "time": "13:00:00",
+            "weekday_for_lessons": [
+                1,
+                6
+            ],
+            "price": 100.00,
+            "active": true
+        }
+    }
+]

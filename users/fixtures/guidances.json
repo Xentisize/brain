@@ -1,0 +1,42 @@
+[
+    {
+        "model": "users.Guidance",
+        "pk": 1,
+        "fields": {
+            "name": "Chan Tai Man",
+            "relationship": 2,
+            "contact": "61234567",
+            "student": 4
+        }
+    },
+    {
+        "model": "users.Guidance",
+        "pk": 2,
+        "fields": {
+            "name": "Chan Mei Ling",
+            "relationship": 1,
+            "contact": "56323232",
+            "student": 5
+        }
+    },
+    {
+        "model": "users.Guidance",
+        "pk": 3,
+        "fields": {
+            "name": "Lam Mei Fung",
+            "relationship": 2,
+            "contact": "61230090",
+            "student": 6
+        }
+    },
+    {
+        "model": "users.Guidance",
+        "pk": 4,
+        "fields": {
+            "name": "Chow Sou Na",
+            "relationship": 3,
+            "contact": "56781234",
+            "student": 7
+        }
+    }
+]

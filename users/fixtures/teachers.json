@@ -1,0 +1,43 @@
+[
+    {
+        "model": "users.User",
+        "pk": 2,
+        "fields": {
+            "as_id": "AS000100",
+            "entry_date": "2018-01-01",
+            "is_teacher": true,
+            "password": "1234567",
+            "username": "angel_lu",
+            "first_name": "Tin Yan",
+            "last_name": "Lu",
+            "english_name": "Angel",
+            "chinese_name": "盧天恩",
+            "gender": "F",
+            "birthday": "1990-09-20",
+            "home_tel": "27133107",
+            "mobile_tel": "95027008",
+            "address": "Flat G, 12/F, Block 1, Mei Wood Gardern, Kingwood Villa, Tin Shui Wai, N.T"
+        }
+    },
+    {
+        "model": "users.User",
+        "pk": 3,
+        "fields": {
+            "as_id": "AS000107",
+            "entry_date": "2018-01-01",
+            "is_teacher": true,
+            "password": "1234567",
+            "username": "wik_cwk",
+            "first_name": "Wai Kei",
+            "last_name": "Chan",
+            "english_name": "Wik",
+            "chinese_name": "陳威麒",
+            "gender": "M",
+            "birthday": "1990-09-20",
+            "home_tel": "27133107",
+            "mobile_tel": "60305355",
+            "address": "Flat G, 12/F, Block 1, Mei Wood Gardern, Kingwood Villa, Tin Shui Wai, N.T"
+        }
+    }
+    
+]

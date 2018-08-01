@@ -1,0 +1,51 @@
+[
+    {
+        "model": "scheduler.Weekday",
+        "pk": 0,
+        "fields": {
+            "day": 1
+        }
+    },
+    {
+        "model": "scheduler.Weekday",
+        "pk": 1,
+        "fields": {
+            "day": 2
+        }
+    },
+    {
+        "model": "scheduler.Weekday",
+        "pk": 2,
+        "fields": {
+            "day": 3
+        }
+    },
+    {
+        "model": "scheduler.Weekday",
+        "pk": 3,
+        "fields": {
+            "day": 4
+        }
+    },
+    {
+        "model": "scheduler.Weekday",
+        "pk": 4,
+        "fields": {
+            "day": 5
+        }
+    },
+    {
+        "model": "scheduler.Weekday",
+        "pk": 5,
+        "fields": {
+            "day": 6
+        }
+    },
+    {
+        "model": "scheduler.Weekday",
+        "pk": 6,
+        "fields": {
+            "day": 7
+        }
+    }
+]
