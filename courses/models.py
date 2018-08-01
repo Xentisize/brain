@@ -4,10 +4,13 @@ from django.contrib.auth import get_user_model
 import datetime
 
 from scheduler.models import Weekday
+from .managers import CourseManager
 
 
 class Course(models.Model):
     """Course represents a single lesson for a student."""
+
+    courses_list = CourseManager()
 
     # Constant for setting the default lesson duration.
     DEFAULT_LESSON_DURATION = datetime.timedelta(hours=1)
@@ -16,8 +19,8 @@ class Course(models.Model):
 
     title = models.CharField(max_length=100)
     subject = models.CharField(max_length=50, choices=SUBJECTS)
-    students = models.ManyToManyField(get_user_model(), related_name='students')
-    teacher = models.ForeignKey(get_user_model(), related_name='teachers', on_delete=models.CASCADE)
+    students = models.ManyToManyField(get_user_model(), related_name='courses')
+    teacher = models.ForeignKey(get_user_model(), related_name='teaching_courses', on_delete=models.CASCADE)
     # Duration is the length of the lesson
     duration = models.DurationField(default=DEFAULT_LESSON_DURATION, help_text='Format: [HH:MM:SS]')
     time = models.TimeField(help_text='Format: [HH:MM:SS]')
