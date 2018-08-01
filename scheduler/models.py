@@ -1,7 +1,5 @@
 from django.db import models
 
-from attendance.models import Lesson
-
 
 class Weekday(models.Model):
     """Weekday represents a weekday."""
@@ -30,7 +28,7 @@ class DailySchedule(models.Model):
     """DailySchedule represents a schedule for a single day. It includes all the lesson in that day."""
     day = models.SmallIntegerField()
     weekday = models.ForeignKey('Weekday', on_delete=models.CASCADE)
-    lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE)
+    lesson = models.ForeignKey('attendance.Lesson', on_delete=models.CASCADE)
 
     class Meta:
         ordering = ("lesson__datetime", )

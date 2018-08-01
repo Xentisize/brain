@@ -1,7 +1,7 @@
 [
     {
         "model": "users.User",
-        "pk": 2,
+        "pk": 1,
         "fields": {
             "as_id": "AS000100",
             "entry_date": "2018-01-01",
@@ -21,7 +21,7 @@
     },
     {
         "model": "users.User",
-        "pk": 3,
+        "pk": 2,
         "fields": {
             "as_id": "AS000107",
             "entry_date": "2018-01-01",
